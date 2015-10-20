@@ -1,0 +1,35 @@
+<resources>
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="AppBaseTheme">
+
+
+    </style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- customize the color palette -->
+        <item name="android:colorPrimary">@color/primary</item>
+        <!--   darker variant of colorPrimary (for status bar, contextual app bars) -->
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/textColor</item>
+
+    </style>
+    !-- Tab选项标签 -->
+    <style name="TabButton">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">@drawable/tab_bottom_color</item>
+        <item name="android:background">@drawable/tab_bottomitem_selector</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">0.70000005dip</item>
+        <item name="android:layout_marginRight">0.70000005dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+
+</resources>

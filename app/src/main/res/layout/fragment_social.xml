@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- ViewPager是一个控件 -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/adv_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="160dp">
+
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/viewGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adv_pager"
+            android:layout_marginTop="-25px"
+            android:gravity="right"
+            android:orientation="horizontal"></LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/viewGroup_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adv_pager"
+        android:layout_marginTop="25px"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <!--<ImageButton-->
+        <!--android:layout_width="380dip"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/imageButton_1"-->
+        <!--android:src="@drawable/"/>-->
+        <!--<ImageButton-->
+        <!--android:layout_width="0"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/imageButton_2" />-->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#d8d7d7"
+        android:text="推荐球队"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#969595"
+        android:textSize="30px" />
+
+    <ListView
+        android:id="@+id/list_id"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

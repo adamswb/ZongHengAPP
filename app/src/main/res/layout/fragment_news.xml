@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="8dp"
+        android:layout_marginBottom="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+
+
+                android:id="@+id/news_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+                <ImageView
+                    android:id="@+id/news_info_photo"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/news1"/>
+                <TextView
+                    android:id="@+id/news_info_title"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/news_info_photo"
+                    android:textSize="10sp"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="女排世界杯进入第三比赛日，中国女排迎来开赛以来最严峻考验，面对头号强敌美国队，中国女排在已23-25惜败首局后，第二局中段突然手感全无，第三局女排姑娘尽管一路紧咬比分，但最后时刻仍以23-25惜败对手，总比分0-3输球，遭遇开赛以来首尝败绩。" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="8dp"
+        android:layout_marginBottom="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/news_header1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+                <ImageView
+                    android:id="@+id/news_info_photo1"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/news2"/>
+                <TextView
+                    android:id="@+id/news_info_title1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/news_info_photo1"
+                    android:textSize="10sp"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="腾讯体育8月24日讯 2015亚冠1/4决赛首回合即将打响，广州恒大已抵达日本并进行了赛前踩场训练。气氛轻松，恒大将士信心十足。" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="80dp "
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    app:cardBackgroundColor="@color/white"
+    card_view:cardCornerRadius="5dp" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/guiyangshiming" />
+        <TextView
+            android:id="@+id/comp_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/img"
+            android:text="贵阳市民健身中心"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/ratingBar"
+            android:layout_below="@+id/comp_name"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="￥20/小时"
+            android:textColor="#fab629"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="23dp"
+            android:text="0.5km"
+            android:textColor="@color/gray"
+            android:textSize="10sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/comp_name"
+            android:layout_below="@+id/price"
+            android:numStars="5" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
